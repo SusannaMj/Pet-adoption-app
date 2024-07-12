@@ -6,10 +6,18 @@ export default function Home() {
   function showPups() {
     navigate("/pups");
   }
+
+  function navigateToDogbreeds() {
+    navigate("/dogbreeds");
+  }
   return (
     <div>
       <h1>Ready to meet your new best friend?</h1>
       <button onClick={showPups}>Let's go!</button>
+      <h2>
+        Curious what dogbreed might match with you? Try our dogbreed-match-maker
+      </h2>
+      <button onClick={navigateToDogbreeds}>Find my match</button>
     </div>
   );
 }
