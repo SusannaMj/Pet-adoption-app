@@ -12,8 +12,10 @@ export default function Home() {
   }
   return (
     <div>
-      <h1>Ready to meet your new best friend?</h1>
-      <button onClick={showPups}>Let's go!</button>
+      <hero>
+        <h1>Ready to meet your new best friend?</h1>
+        <button onClick={showPups}>Let's go!</button>
+      </hero>
       <h2>
         Curious what dogbreed might match with you? Try our dogbreed-match-maker
       </h2>
