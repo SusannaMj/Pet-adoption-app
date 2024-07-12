@@ -19,6 +19,8 @@ export default function Dogbreeds() {
           type="number"
           placeholder="How old are you?"
           onChange={updateAge}
+          min={0}
+          max={100}
         />
         <input type="submit" value="Search" />
       </form>
