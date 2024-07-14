@@ -1,26 +1,25 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export default function Dogbreeds() {
-  let [age, setAge] = useState("");
+  let [dogbreed, setDogbreed] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    alert(`You are ${age} years old`);
+    alert(`You are searching for ${dogbreed}`);
   }
 
-  function updateAge(event) {
+  function updateDogbreed(event) {
     event.preventDefault();
-    setAge(event.target.value);
+    setDogbreed(event.target.value);
   }
   return (
     <div>
       <form className="searchForm" onSubmit={handleSubmit}>
         <input
-          type="number"
-          placeholder="How old are you?"
-          onChange={updateAge}
-          min={0}
-          max={100}
+          type="text"
+          placeholder="What breed are you interested in?"
+          onChange={updateDogbreed}
         />
         <input type="submit" value="Search" />
       </form>
