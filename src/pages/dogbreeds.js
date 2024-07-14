@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "../Results";
 
 export default function Dogbreeds() {
   let [dogbreed, setDogbreed] = useState("");
@@ -44,6 +45,7 @@ export default function Dogbreeds() {
         <input type="submit" value="Search" />
       </form>
       <h1>See an overview of dogbreeds below</h1>
+      <Results />
     </div>
   );
 }
