@@ -5,17 +5,18 @@ export default function Dogbreeds() {
   let [dogbreed, setDogbreed] = useState("");
 
   function handleResponse(response) {
-    console.log(response);
+    console.log(response.data);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
     alert(`You are searching for ${dogbreed}`);
 
-    //https://docs.apiverve.com/api/dogbreeds
+    //https://documenter.getpostman.com/view/5578104/RWgqUxxh
 
-    let apiKey = "74a290c3-9db8-4d82-80a6-14cf81faf808";
-    let apiUrl = "https://api.apiverve.com/v1/dogbreeds?breed=beagle";
+    let apiKey =
+      "live_bJQ3mdfZyoZ0AHqZOuGAIdF8JEtGerS6xGlm9ej4ltQSez0flb6zJabjEGSIILDf";
+    let apiUrl = `https://api.thedogapi.com/v1/breeds/search?q=${dogbreed}&attach_image=1`;
 
     axios
       .get(apiUrl, {
