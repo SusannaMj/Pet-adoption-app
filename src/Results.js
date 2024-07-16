@@ -6,7 +6,6 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div>
-        <h2>{props.results[0].name}</h2>
         {props.results.map(function (result, index) {
           return (
             <div key={index}>
