@@ -11,11 +11,11 @@ export default function Home() {
     navigate("/dogbreeds");
   }
   return (
-    <div>
-      <hero>
+    <div className="hero">
+      <div>
         <h1>Ready to meet your new best friend?</h1>
         <button onClick={showPups}>Let's go!</button>
-      </hero>
+      </div>
       <h2>
         Curious what dogbreed might match with you? Try our dogbreed-match-maker
       </h2>

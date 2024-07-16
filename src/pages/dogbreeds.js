@@ -4,16 +4,18 @@ import Results from "../Results";
 
 export default function Dogbreeds() {
   let [dogbreed, setDogbreed] = useState("");
+  let [dogbreedResults, setDogbreedResults] = useState("");
 
   function handleResponse(response) {
     console.log(response.data);
+    setDogbreedResults(response.data);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
     alert(`You are searching for ${dogbreed}`);
 
-    //https://documenter.getpostman.com/view/5578104/RWgqUxxh
+    //API documentation: https://documenter.getpostman.com/view/5578104/RWgqUxxh
 
     let apiKey =
       "live_bJQ3mdfZyoZ0AHqZOuGAIdF8JEtGerS6xGlm9ej4ltQSez0flb6zJabjEGSIILDf";
@@ -45,7 +47,7 @@ export default function Dogbreeds() {
         <input type="submit" value="Search" />
       </form>
       <h1>See an overview of dogbreeds below</h1>
-      <Results />
+      <Results results={dogbreedResults} />
     </div>
   );
 }
