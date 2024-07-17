@@ -1,0 +1,24 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("/src/images/hero-dog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: 700px;
+}
+
+.hero button {
+  padding: 18px 53px;
+  background-color: #efc157;
+  color: white;
+  border: 1px solid lightgray;
+}
+
+h1.hero {
+  text-align: left;
+}
+
+p {
+  border-left: 2px solid white;
+  padding-left: 20px;
+}
