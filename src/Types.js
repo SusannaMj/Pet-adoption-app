@@ -6,7 +6,7 @@ export default function Types(props) {
       <h2>{props.type.name}</h2>
       <h3>{props.type.life_span}</h3>
       <h3>{props.type.temperament}</h3>
-      <img src={props.type.image.url} />
+      <img src={props.type.image.url} alt={props.type.name} />
     </div>
   );
 }
