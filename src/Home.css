@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 
-p {
+.hero p {
   border-left: 2px solid white;
   padding-left: 20px;
   font-size: 17px;
@@ -47,8 +47,7 @@ h2 {
 }
 
 .main {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .navigateToDogbreeds {
@@ -69,4 +68,79 @@ h2 {
 
 .main {
   text-align: center;
+}
+
+.main p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    max-height: 600px;
+  }
+
+  .main {
+    padding: 30px 30px 20px 30px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .main p {
+    font-size: 15px;
+  }
+  .hero button {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  .main button {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 33px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  .main {
+    padding: 30px 30px 20px 30px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .main p {
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .hero-textbox {
+    margin: 0 auto;
+    padding: 60px 50px;
+  }
+
+  .hero button {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
+
+  .main button {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
 }
