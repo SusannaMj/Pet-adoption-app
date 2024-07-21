@@ -41,7 +41,7 @@
   font-size: 60px;
 }
 
-h2 {
+.main h2 {
   font-size: 37px;
   color: var(--second-color);
 }

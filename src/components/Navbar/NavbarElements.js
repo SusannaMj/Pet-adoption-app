@@ -6,6 +6,7 @@ export const Nav = styled.nav`
   padding: 25px;
   font-size: 15px;
   font-weight: bold;
+  background-color: white;
 `;
 
 export const NavLink = styled(Link)`

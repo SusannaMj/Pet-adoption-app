@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "../Results";
+import "../Dogbreeds.css";
 
 export default function Dogbreeds() {
   let [dogbreed, setDogbreed] = useState("");
@@ -37,16 +38,21 @@ export default function Dogbreeds() {
     setDogbreed(event.target.value);
   }
   return (
-    <div>
-      <form className="searchForm" onSubmit={handleSubmit}>
+    <div className="dogbreedPageBody">
+      <form className="dogbreedSearchForm" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="What breed are you interested in?"
           onChange={updateDogbreed}
+          className="dogbreedSearchField"
         />
-        <input type="submit" value="Search" />
+        <input
+          type="submit"
+          value="Search"
+          className="dogbreedSearchSubmitButton"
+        />
       </form>
-      <h1>See an overview of dogbreeds below</h1>
+
       <Results results={dogbreedResults} />
     </div>
   );

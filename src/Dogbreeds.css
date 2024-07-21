@@ -1,0 +1,25 @@
+.dogbreedSearchForm {
+  text-align: center;
+  padding: 50px;
+}
+
+.dogbreedSearchField {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.dogbreedSearchSubmitButton {
+  font-size: 30px;
+  padding: 10px;
+  margin-left: 10px;
+
+  background-color: var(--second-color);
+  color: white;
+  border: 1px solid lightgray;
+
+  font-weight: bold;
+}
+
+.dogbreedPageBody {
+  background-color: rgb(251, 240, 191);
+}
