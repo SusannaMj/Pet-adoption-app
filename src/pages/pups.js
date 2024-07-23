@@ -6,6 +6,10 @@ export default function Pups() {
   let [age, setAge] = useState("");
   let [breed, setBreed] = useState("");
 
+  function handleApiResponse(event) {
+    alert("hello");
+  }
+
   function updateBreed(event) {
     event.preventDefault();
     setBreed(event.target.value);
