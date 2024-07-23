@@ -1,5 +1,6 @@
 import React from "react";
 import ReactIframe from "react-iframe";
+import "../About.css";
 
 export default function About() {
   return (
@@ -18,7 +19,7 @@ export default function About() {
 
         <h2>Contact Us</h2>
         <form>
-          <input type="taxt" placeholder="Name" />
+          <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="text" placeholder="Message" />
           <input type="submit" value="Submit" />
