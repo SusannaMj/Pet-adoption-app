@@ -3,6 +3,12 @@ import ReactIframe from "react-iframe";
 import "../About.css";
 
 export default function About() {
+  function handleContactSubmit(event) {
+    event.preventDefault();
+    alert(
+      "Thank you for contacting us, we will get back to you as quickly as possible! 🐶😊"
+    );
+  }
   document.body.style.backgroundColor = "#8F2DE2";
   return (
     <div>
@@ -22,7 +28,7 @@ export default function About() {
           </div>
           <div className="contact-form">
             <h2>Contact Us</h2>
-            <form>
+            <form onSubmit={handleContactSubmit}>
               <input
                 className="contactDetails"
                 type="text"
