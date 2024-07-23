@@ -1,3 +1,7 @@
+body {
+  background-color: #8f2de2;
+}
+
 .contact-form input {
   display: block;
   width: 600px;
