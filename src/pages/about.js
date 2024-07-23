@@ -9,7 +9,6 @@ export default function About() {
       "Thank you for contacting us, we will get back to you as quickly as possible! 🐶😊"
     );
   }
-  document.body.style.backgroundColor = "#8F2DE2";
   return (
     <div>
       <h1>Where to find us</h1>
