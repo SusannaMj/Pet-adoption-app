@@ -10,7 +10,7 @@ export default function About() {
     );
   }
   return (
-    <div>
+    <div className="aboutPageBody">
       <h1>Where to find us</h1>
       <div className="contactCardContainer">
         <div className="contact-card">
@@ -27,26 +27,30 @@ export default function About() {
           </div>
           <div className="contact-form">
             <h2>Contact Us</h2>
-            <form onSubmit={handleContactSubmit}>
+            <form onSubmit={handleContactSubmit} id="contactForm">
               <input
-                className="contactDetails"
+                className="contactName"
                 type="text"
                 placeholder="Name"
+                id="contactName"
               />
               <input
-                className="contactDetails"
+                className="contactEmail"
                 type="email"
                 placeholder="Email"
+                id="contactEmail"
               />
               <input
                 className="contactMessage"
                 type="text"
                 placeholder="Message"
+                id="contactMessage"
               />
               <input
                 className="submitContactFormButton"
                 type="submit"
                 value="Submit"
+                id="contactButton"
               />
             </form>
           </div>
