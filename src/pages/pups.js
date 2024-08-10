@@ -5,10 +5,12 @@ import axios from "axios";
 export default function Pups() {
   let [age, setAge] = useState("");
   let [breed, setBreed] = useState("");
+  let [dogSearchResult, setDogSearchResult] = useState("");
 
   function handleApiResponse(response) {
-    console.log(response.message);
-    alert(`you are searchinf for a ${age} year old ${breed}`);
+    console.log(response.data.message);
+    alert(`you are searching for a ${age} year old ${breed}`);
+    setDogSearchResult(response.data.message);
   }
 
   function updateBreed(event) {
@@ -33,11 +35,11 @@ export default function Pups() {
     <div>
       <h1>Meet the pups!</h1>
       <form onSubmit={updateSearchInformation}>
-        <input type="number" onChange={updateAge} min="1" />
-        <input type="text" onChange={updateBreed} />
-        <input type="submit" value="search" />
+        <input type="number" onChange={updateAge} min="1" id="dogAge" />
+        <input type="text" onChange={updateBreed} id="dogBreed" />
+        <input type="submit" value="search" id="dogSearchSubmitButtun" />
       </form>
-      <Profile />
+      <Profile results={dogSearchResult} />
     </div>
   );
 }
