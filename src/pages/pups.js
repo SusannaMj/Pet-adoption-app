@@ -6,8 +6,9 @@ export default function Pups() {
   let [age, setAge] = useState("");
   let [breed, setBreed] = useState("");
 
-  function handleApiResponse(event) {
-    alert("hello");
+  function handleApiResponse(response) {
+    console.log(response.message);
+    alert(`you are searchinf for a ${age} year old ${breed}`);
   }
 
   function updateBreed(event) {
@@ -21,8 +22,9 @@ export default function Pups() {
   }
 
   function updateSearchInformation(event) {
-    let apiKey = "";
-    let apiUrl = "";
+    event.preventDefault();
+    //let apiKey = "";
+    let apiUrl = `https://dog.ceo/api/breed/${breed}/images/random`;
 
     axios.get(apiUrl).then(handleApiResponse);
   }
