@@ -14,7 +14,7 @@ export default function Pups() {
   function updateSearchInformation(event) {
     event.preventDefault();
     //let apiKey = "";
-    let apiUrl = `https://dog.ceo/api/breeds/image/random/20`;
+    let apiUrl = `https://dog.ceo/api/breeds/image/random/2`;
 
     axios.get(apiUrl).then(handleApiResponse);
   }
