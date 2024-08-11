@@ -22,7 +22,9 @@ export default function Pups() {
   return (
     <div>
       <h1>Meet the pups!</h1>
-
+      <form onSubmit={updateSearchInformation}>
+        <input type="submit" value="Let´s go!" id="dogSearchSubmitButtun" />
+      </form>
       <Profile results={dogSearchResult} />
     </div>
   );
