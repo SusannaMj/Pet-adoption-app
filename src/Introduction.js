@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
-function createIntroduction(response) {
-  console.log(response.data.answer);
-  return (
-    <div>
-      <p>{response.data.answer}</p>
-    </div>
-  );
-}
-
 export default function Introduction(props) {
+  let [introduction, setIntroduction] = useState("");
+  function createIntroduction(response) {
+    console.log(response.data.answer);
+
+    setIntroduction(response.data.answer);
+  }
   //documentation: https://www.shecodes.io/learn/apis/ai
   let imageUrl = props.result;
   let apiKey = "49t1f4o8a06a34d2d2bcfda963fe315f";
@@ -20,4 +17,6 @@ export default function Introduction(props) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(createIntroduction);
+
+  return <div>{introduction}</div>;
 }
