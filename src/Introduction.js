@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./Introduction.css";
 
 export default function Introduction(props) {
   let [introduction, setIntroduction] = useState("");
@@ -25,5 +26,5 @@ export default function Introduction(props) {
     [props.imageUrl]
   );
 
-  return <div>{introduction}</div>;
+  return <div className="introductionText">{introduction}</div>;
 }

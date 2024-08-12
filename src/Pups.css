@@ -1,0 +1,15 @@
+.profileCard {
+  display: flex;
+  border: 1px solid grey;
+  margin: 0 auto;
+  padding: 30px 50px 30px 50px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.dogImage {
+  display: flex;
+  max-width: 600px;
+  min-width: 600px;
+  margin: 0 auto;
+}
