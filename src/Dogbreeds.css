@@ -25,6 +25,10 @@
   font-weight: bold;
 }
 
+.dogbreedSearchSubmitButton:active {
+  transform: scale(0.8);
+}
+
 .dogbreedPageBody {
   background-image: linear-gradient(
       100deg,

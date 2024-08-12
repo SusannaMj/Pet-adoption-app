@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+.hero button:active {
+  transform: scale(0.8);
+}
+
 .hero p {
   border-left: 2px solid white;
   padding-left: 20px;
@@ -62,6 +66,10 @@
   font-size: 16px;
   font-weight: bold;
   border-radius: 20px;
+}
+
+.navigateToDogbreeds:active {
+  transform: scale(0.8);
 }
 
 .main button:hover {

@@ -31,3 +31,7 @@
 .dogSearchSubmitButton:hover {
   cursor: pointer;
 }
+
+.dogSearchSubmitButton:active {
+  transform: scale(0.8);
+}

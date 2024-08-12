@@ -14,7 +14,6 @@ export default function Dogbreeds() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    alert(`You are searching for ${dogbreed}`);
 
     //API documentation: https://documenter.getpostman.com/view/5578104/RWgqUxxh
 
