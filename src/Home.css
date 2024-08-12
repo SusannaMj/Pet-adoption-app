@@ -14,7 +14,7 @@
 
 .hero-textbox {
   text-align: left;
-  padding: 143px 100px;
+  padding: 120px 50px;
 }
 
 .hero button {
@@ -33,17 +33,18 @@
 }
 
 .hero button:active {
-  transform: scale(0.8);
+  transform: scale(0.94);
 }
 
 .hero p {
   border-left: 2px solid white;
   padding-left: 20px;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 91px;
+  margin-bottom: 69px;
 }
 
 .main h2 {
@@ -69,7 +70,7 @@
 }
 
 .navigateToDogbreeds:active {
-  transform: scale(0.8);
+  transform: scale(0.94);
 }
 
 .main button:hover {
