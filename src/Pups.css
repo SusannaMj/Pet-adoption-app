@@ -14,3 +14,20 @@
   min-width: 600px;
   margin: 0 auto;
 }
+
+.dogSearchSubmitButton {
+  display: block;
+  padding: 18px 45px;
+  background-color: var(--second-color);
+  color: white;
+  border: 1px solid lightgray;
+  margin: 0 auto;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.dogSearchSubmitButton:hover {
+  cursor: pointer;
+}

@@ -25,6 +25,7 @@
   margin: 30px auto;
   font-size: 16px;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 .hero button:hover {
@@ -60,6 +61,7 @@
   margin: 30px auto;
   font-size: 16px;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 .main button:hover {
