@@ -7,12 +7,12 @@ export default function Profile(props) {
   console.log(props.results.data);
   if (props.results) {
     return (
-      <div className="profileCard">
-        <div className="profilePicture">
+      <div>
+        <div>
           {props.results.map(function (result, index) {
             return (
-              <div>
-                <div key={index}>
+              <div className="profileCard">
+                <div key={index} className="profilePicture">
                   <img
                     src={result}
                     alt="profile-picture"

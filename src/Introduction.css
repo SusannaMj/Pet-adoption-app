@@ -1,4 +1,7 @@
 .introductionText {
   display: flex;
   max-width: 600px;
+  position: absolute;
+  top: 160px;
+  left: 50px;
 }
