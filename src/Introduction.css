@@ -1,7 +1,20 @@
 .introductionText {
+  font-size: 25px;
+  line-height: 1.5;
   display: flex;
-  max-width: 600px;
+  width: auto;
+
+  padding: 30px;
+  margin: 20px 20px 20px 20px;
+
   position: absolute;
-  top: 160px;
-  left: 50px;
+  top: 10%;
+
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.78);
+}
+
+.introductionText:hover {
+  opacity: 100%;
+  transition: all 0.2s ease-in;
 }
