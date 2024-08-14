@@ -1,5 +1,6 @@
 import React from "react";
 import Introduction from "./Introduction";
+import "./Profile.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
