@@ -1,18 +1,13 @@
-.profileCard {
+.dogImage {
   display: flex;
-  border: 1px solid grey;
+  max-width: 600px;
+  min-width: 600px;
+
   margin: 0 auto;
   padding: 30px 50px 30px 50px;
   max-width: 600px;
   width: 100%;
   position: relative;
-}
-
-.dogImage {
-  display: flex;
-  max-width: 600px;
-  min-width: 600px;
-  margin: 0 auto;
 }
 
 .dogSearchSubmitButton {
@@ -34,4 +29,16 @@
 
 .dogSearchSubmitButton:active {
   transform: scale(0.94);
+}
+
+.carousel {
+  box-sizing: ;
+}
+
+.profileCard {
+  margin: 0 auto;
+  max-width: 600px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding-bottom: 150px;
 }
