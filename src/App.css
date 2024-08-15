@@ -3,8 +3,29 @@
   --orange-color: #faa907;
   --green-color: #95b826;
   --blue-color: #2bb2ae;
-  --grey-color: #9b9b9b;
+  --grey-color: #898888;
   --light-grey-color: #f3f3f3;
+}
+
+.pink {
+  color: var(--pink-color);
+}
+.orange {
+  color: var(--orange-color);
+}
+.green {
+  color: var(--green-color);
+}
+
+.blue {
+  color: var(--blue-color);
+}
+.grey {
+  color: var(--grey-color);
+}
+
+.light-grey {
+  color: var(--light-grey-color);
 }
 
 body {
