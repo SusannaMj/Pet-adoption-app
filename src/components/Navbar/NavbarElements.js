@@ -7,6 +7,8 @@ export const Nav = styled.nav`
   font-size: 15px;
   font-weight: bold;
   background-color: white;
+
+  border-bottom: 6px solid var(--light-grey-color);
 `;
 
 export const NavLink = styled(Link)`
@@ -16,6 +18,8 @@ export const NavLink = styled(Link)`
   color: var(--grey-color);
   font-size: 18px;
   text-transform: uppercase;
+  margin-left: auto;
+  border-left: 2px solid var(--light-grey-color);
 `;
 
 export const NavMenu = styled.div`
