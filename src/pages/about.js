@@ -11,7 +11,13 @@ export default function About() {
   }
   return (
     <div className="aboutPageBody">
-      <h1>Where to find us</h1>
+      <h1>
+        <span className="pink">Where</span>{" "}
+        <span>
+          <span className="green">to</span> find us
+        </span>
+      </h1>
+      <h3 className="blue">And our fluffy friends</h3>
       <div className="contactCardContainer">
         <div className="contact-card">
           <div className="map">
@@ -25,7 +31,7 @@ export default function About() {
             />
           </div>
           <div className="contact-form">
-            <h2>Contact Us</h2>
+            <h2 className="grey">Contact Us</h2>
             <form onSubmit={handleContactSubmit} id="contactForm">
               <input
                 className="contactName"
