@@ -1,0 +1,16 @@
+.navbarLinks {
+  display: flex;
+  margin-left: auto;
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+.logoStart {
+  font-size: 65px;
+}
+
+.logoEnd {
+  font-size: 43px;
+}

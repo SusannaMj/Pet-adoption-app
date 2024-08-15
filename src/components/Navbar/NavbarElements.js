@@ -13,7 +13,9 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   display: flex;
   padding-right: 20px;
-  color: black;
+  color: var(--grey-color);
+  font-size: 18px;
+  text-transform: uppercase;
 `;
 
 export const NavMenu = styled.div`
