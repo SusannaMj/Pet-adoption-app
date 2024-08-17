@@ -13,9 +13,11 @@
 .dogSearchSubmitButton {
   display: block;
   padding: 18px 45px;
-  font-size: 200px;
+  font-size: 400px;
+  border: 0;
+  background-color: white;
 
-  margin: 0 auto;
+  margin: 50px auto;
 
   margin-bottom: 50px;
   border-radius: 20px;
@@ -27,6 +29,10 @@
 
 .dogSearchSubmitButton:active {
   transform: scale(0.94);
+}
+
+.dogSearchButtonName {
+  font-size: 50px;
 }
 
 .profileCard {

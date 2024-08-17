@@ -26,13 +26,16 @@ export default function Pups() {
   return (
     <div>
       <h1>Meet the pups!</h1>
-      <button onClick={updateSearchInformation}>
+      <button
+        onClick={updateSearchInformation}
+        className="dogSearchSubmitButton"
+      >
         <FontAwesomeIcon
           icon={faPaw}
           style={{ color: "#63E6BE" }}
-          className="dogSearchSubmitButton"
           type="submit"
         />
+        <div className="dogSearchButtonName">Let´s go!</div>
       </button>
       <Profile results={dogSearchResult} />
     </div>
