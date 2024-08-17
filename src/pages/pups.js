@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Profile from "../Profile";
 import axios from "axios";
 import "../Pups.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faPaw } from "@fortawesome/free-solid-svg-icons";
 
 export default function Pups() {
   let [dogSearchResult, setDogSearchResult] = useState("");
@@ -23,13 +26,14 @@ export default function Pups() {
   return (
     <div>
       <h1>Meet the pups!</h1>
-      <form onSubmit={updateSearchInformation}>
-        <input
-          type="submit"
-          value="Let´s go!"
+      <button onClick={updateSearchInformation}>
+        <FontAwesomeIcon
+          icon={faPaw}
+          style={{ color: "#63E6BE" }}
           className="dogSearchSubmitButton"
+          type="submit"
         />
-      </form>
+      </button>
       <Profile results={dogSearchResult} />
     </div>
   );

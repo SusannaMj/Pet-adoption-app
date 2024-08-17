@@ -18,13 +18,10 @@ export const NavLink = styled(Link)`
   color: var(--grey-color);
   font-size: 18px;
   text-transform: uppercase;
-  margin-left: auto;
+
   border-left: 2px solid var(--light-grey-color);
-  margin-top: 0;
-  padding-top: 0;
 `;
 
 export const NavMenu = styled.div`
   display: flex;
-  align-items: center;
 `;

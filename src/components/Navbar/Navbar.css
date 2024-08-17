@@ -4,13 +4,14 @@
 
 .navbarLink:hover {
   color: black;
-  transition: all 30ms ease-in-out;
+  transition: all 100ms ease-in-out;
   border-top: 8px solid var(--blue-color);
   padding-top: 21px;
 }
 
 .logo {
   text-transform: uppercase;
+  justify-content: flex-start;
 }
 
 .logoStart {
