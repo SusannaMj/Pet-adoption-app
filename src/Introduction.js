@@ -13,7 +13,6 @@ export default function Introduction(props) {
   useEffect(
     function () {
       //documentation: https://www.shecodes.io/learn/apis/ai
-      let imageUrl = props.imageUrl;
 
       let apiKey = "49t1f4o8a06a34d2d2bcfda963fe315f";
       let prompt =
