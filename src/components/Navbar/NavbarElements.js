@@ -1,9 +1,9 @@
-import { NavLink as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
   display: flex;
-  padding: 25px;
+
   font-size: 15px;
   font-weight: bold;
   background-color: white;
@@ -20,6 +20,8 @@ export const NavLink = styled(Link)`
   text-transform: uppercase;
   margin-left: auto;
   border-left: 2px solid var(--light-grey-color);
+  margin-top: 0;
+  padding-top: 0;
 `;
 
 export const NavMenu = styled.div`

@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <Nav>
       <NavMenu>
-        <div className="logo">
+        <div className="logo" style={{ padding: 17 }}>
           <span className="logoStart">DOG</span>
           <span className="logoEnd">
             <span className="pink">h</span>
@@ -18,16 +18,20 @@ export default function Navbar() {
           </span>
         </div>
         <div className="navbarLinks">
-          <NavLink className="navbarLink" to="/">
+          <NavLink className="navbarLink" to="/" style={{ padding: 45 }}>
             Home
           </NavLink>
-          <NavLink className="navbarLink" to="/about">
+          <NavLink className="navbarLink" to="/about" style={{ padding: 45 }}>
             About
           </NavLink>
-          <NavLink className="navbarLink" to="/dogbreeds">
+          <NavLink
+            className="navbarLink"
+            to="/dogbreeds"
+            style={{ padding: 45 }}
+          >
             Dogbreeds
           </NavLink>
-          <NavLink className="navbarLink" to="/pups">
+          <NavLink className="navbarLink" to="/pups" style={{ padding: 45 }}>
             Meet the pups
           </NavLink>
         </div>
