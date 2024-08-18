@@ -27,8 +27,11 @@ export default function Pups() {
   }
 
   return (
-    <div>
-      <h1>Meet the pups!</h1>
+    <div className="pupsPageBody">
+      <h1>
+        <span className="orange">Meet</span>
+        <span className="pink"> the</span> pu<span className="green">p</span>s
+      </h1>
       <button
         onClick={updateSearchInformation}
         className="dogSearchSubmitButton"
@@ -39,7 +42,7 @@ export default function Pups() {
           style={{ color: "#63E6BE" }}
           type="submit"
         />
-        <div className="dogSearchButtonName">Let´s go!</div>
+        <div className="dogSearchButtonName">Let´s woof</div>
       </button>
       <Profile results={dogSearchResult} />
     </div>
