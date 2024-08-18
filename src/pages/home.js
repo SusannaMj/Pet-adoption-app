@@ -21,12 +21,17 @@ export default function Home() {
             Your new best friend is waiting to meet you!
           </p>
 
-          <button onClick={showPups}>Let's go!</button>
+          <button onClick={showPups}>Let's go</button>
         </div>
       </header>
       <div className="main">
-        <h2>Curious what dogbreed might match with you?</h2>
-        <p>Try our dogbreed library to see if you will be a good match!</p>
+        <h2>
+          Curious what <span className="pink">dogbreed</span>{" "}
+          <span className="green">might match</span> with you?
+        </h2>
+        <p className="grey">
+          Try our dogbreed library to see if you will be a good match!
+        </p>
         <button onClick={navigateToDogbreeds} className="navigateToDogbreeds">
           Find my match
         </button>

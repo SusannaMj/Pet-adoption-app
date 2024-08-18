@@ -8,22 +8,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  max-height: 615px;
+  max-height: 554px;
+
   display: flex;
 }
 
 .hero-textbox {
   text-align: left;
-  padding: 120px 50px;
+  padding: 59px 50px 120px 50px;
 }
 
 .hero button {
   padding: 18px 45px;
-  background-color: var(--second-color);
+  background-color: var(--orange-color);
   color: white;
   border: 1px solid lightgray;
   margin: 30px auto;
-  font-size: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
   font-weight: bold;
   border-radius: 20px;
 }
@@ -40,16 +42,16 @@
   border-left: 2px solid white;
   padding-left: 20px;
   font-size: 22px;
+  line-height: 1.5;
 }
 
 .hero h1 {
-  font-size: 91px;
+  font-size: 92px;
   margin-bottom: 69px;
 }
 
 .main h2 {
-  font-size: 37px;
-  color: var(--second-color);
+  font-size: 45px;
 }
 
 .main {
@@ -60,11 +62,12 @@
   display: block;
   margin: 20px auto;
   padding: 18px 45px;
-  background-color: var(--second-color);
+  background-color: var(--orange-color);
   color: white;
   border: 1px solid lightgray;
   margin: 30px auto;
-  font-size: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
   font-weight: bold;
   border-radius: 20px;
 }
@@ -84,6 +87,7 @@
 .main p {
   margin-top: 30px;
   margin-bottom: 40px;
+  font-size: 21px;
 }
 
 @media (max-width: 1000px) {
