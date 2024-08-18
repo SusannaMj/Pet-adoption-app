@@ -17,6 +17,9 @@ export default function Pups() {
 
   function updateSearchInformation(event) {
     event.preventDefault();
+    let onButtonClicked = document.querySelector("#searchButton");
+
+    onButtonClicked.classList.add("hide");
 
     let apiUrl = `https://dog.ceo/api/breeds/image/random/10`;
 
@@ -29,6 +32,7 @@ export default function Pups() {
       <button
         onClick={updateSearchInformation}
         className="dogSearchSubmitButton"
+        id="searchButton"
       >
         <FontAwesomeIcon
           icon={faPaw}
