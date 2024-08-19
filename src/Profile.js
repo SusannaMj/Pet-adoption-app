@@ -1,5 +1,6 @@
 import React from "react";
 import Introduction from "./Introduction";
+import Name from "./Name";
 import "./Profile.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -17,6 +18,7 @@ export default function Profile(props) {
               <div key={index} className="profilePicture">
                 <img src={result} alt="profile-picture" className="dogImage" />{" "}
               </div>{" "}
+              <Name imageUrl={result} />
               <Introduction imageUrl={result} />
             </div>
           );
